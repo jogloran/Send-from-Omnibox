@@ -1,14 +1,14 @@
 {
-  "name": "Send from Omnibox",
-  "description" : "Compose an email without leaving the page.",
-  "version": "0.1",
+  "name": "Wikipedia Disambiguator",
+  "description" : "",
+  "version": "0.9",
   "background": {
     "scripts": ["background.js"]
   },
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
              "128": "icon128.png" },
-  "permissions": ["tabs", "unlimitedStorage"],
-  "omnibox": { "keyword" : "." },
+  "permissions": ["tabs", "unlimitedStorage", "http://en.wikipedia.org/w/api.php"],
+  "omnibox": { "keyword" : "wpd" },
   "manifest_version": 2
 }
